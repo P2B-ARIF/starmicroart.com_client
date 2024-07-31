@@ -1,0 +1,105 @@
+.background {
+	background-image: url("./assets/images/h4.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100vh;
+	width: 100%;
+	position: sticky;
+}
+.content {
+	position: absolute;
+	top: 0;
+	z-index: 2;
+	width: 100%;
+	padding: 50px;
+	overflow: scroll;
+	height: 100vh;
+	/* background-color: rgba(255, 255, 255, 0.8); Optional: to make the text more readable */
+	background-color: transparent;
+}
+
+.content::-webkit-scrollbar {
+	display: none;
+}
+
+.content h1,
+.content p {
+	margin: 20px 0;
+}
+
+.loading-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: pink;
+}
+
+.loading-spinner {
+	border: 16px solid #f3f3f3;
+	border-top: 16px solid #3498db;
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.loading_p {
+	font-size: 1.5rem;
+	color: white;
+	margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+	.slick-dots {
+		bottom: 50px !important;
+		display: flex !important;
+		left: 100px;
+		justify-content: left;
+		align-items: start;
+		margin: 0 auto;
+	}
+
+	.slick-dots li {
+		margin: 0 10px !important;
+	}
+
+	.slick-dots li button::before {
+		font-size: 12px !important;
+		color: white !important;
+	}
+	.slick-dots > .slick-active > button::before {
+		font-size: 20px !important;
+	}
+}
+
+.slick-dots {
+	bottom: 50px !important;
+	display: flex !important;
+	left: 150px;
+	justify-content: left;
+	align-items: start;
+	margin: 0 auto;
+}
+
+.slick-dots li {
+	margin: 0 10px !important;
+}
+
+.slick-dots li button::before {
+	font-size: 10px !important;
+	color: white !important;
+}
+.slick-dots > .slick-active > button::before {
+	font-size: 15px !important;
+}
