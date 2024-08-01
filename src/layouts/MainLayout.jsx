@@ -1,7 +1,8 @@
+import { AnimatePresence, motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
-import Navbar from "../components/Navbar";
 import { Outlet, useLocation } from "react-router-dom";
 import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
 const MainLayout = () => {
 	const location = useLocation();
@@ -11,16 +12,22 @@ const MainLayout = () => {
 		setPath(location.pathname);
 	}, [location]);
 
-	// if (true) {
-	// 	return <Loading />;
-	// }
-
 	return (
-		<main>
-			<Navbar path={path} />
-			<Outlet />
-			<Footer />
-		</main>
+		<AnimatePresence mode='wait'>
+			<main>
+				<Navbar path={path} />
+				<motion.div
+					key={location.pathname}
+					initial={{ x: window.innerWidth, opacity: 0 }}
+					animate={{ x: 0, opacity: 1 }}
+					exit={{ x: -window.innerWidth, opacity: 0 }}
+					transition={{ duration: 0.1 }}
+				>
+					<Outlet />
+				</motion.div>
+				<Footer />
+			</main>
+		</AnimatePresence>
 	);
 };
 

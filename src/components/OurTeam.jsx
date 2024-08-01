@@ -47,7 +47,9 @@ const OurTeam = () => {
 				<h3 className='text-center text-2xl md:text-3xl font-bold text-primary font-secondary'>
 					Our Team
 				</h3>
-				<h1 className='text-center text-3xl md:text-4xl font-medium mt-2'>Specialists</h1>
+				<h1 className='text-center text-3xl md:text-4xl font-medium mt-2'>
+					Specialists
+				</h1>
 				<img
 					src='https://ld-wp73.template-help.com/wordpress/prod_14770/v1/wp-content/uploads/2020/11/after-text.png'
 					className='mx-auto'

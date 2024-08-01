@@ -1,13 +1,13 @@
 import React from "react";
 import {
-	LineChart,
+	CartesianGrid,
+	Legend,
 	Line,
+	LineChart,
+	ResponsiveContainer,
+	Tooltip,
 	XAxis,
 	YAxis,
-	CartesianGrid,
-	Tooltip,
-	Legend,
-	ResponsiveContainer,
 } from "recharts";
 
 const data = [
@@ -21,6 +21,7 @@ const data = [
 const LinesGraph = () => {
 	return (
 		<div className='pr-5 mt-5'>
+			<h3 className='ml-2 font-semibold mb-5 text-lg text-black_c'>Summery</h3>
 			<ResponsiveContainer width='100%' height={400}>
 				<LineChart data={data}>
 					<CartesianGrid strokeDasharray='3 3' />

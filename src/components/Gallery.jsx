@@ -24,7 +24,11 @@ const Gallery = () => {
 
 			<div className='py-4 px-2 mx-auto max-w-screen-xl sm:py-4 lg:px-6'>
 				<div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full'>
-					<div className='col-span-2 sm:col-span-1 md:col-span-2 bg-gray-50 h-auto md:h-full flex flex-col'>
+					<div
+						data-aos='fade-right'
+						data-aos-anchor-placement='center-bottom'
+						className='col-span-2 sm:col-span-1 md:col-span-2 bg-gray-50 h-auto md:h-full flex flex-col'
+					>
 						<a
 							href=''
 							className='group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow'
@@ -38,6 +42,8 @@ const Gallery = () => {
 					</div>
 					<div className='col-span-2 sm:col-span-1 md:col-span-2 bg-stone-50'>
 						<a
+							data-aos='fade-up'
+							data-aos-anchor-placement='center-bottom'
 							href=''
 							className='group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 mb-4'
 						>
@@ -49,6 +55,9 @@ const Gallery = () => {
 						</a>
 						<div className='grid gap-4 grid-cols-2 sm:grid-cols-2 lg:grid-cols-2'>
 							<a
+								data-aos-anchor-placement='center-bottom'
+								data-aos='fade-right'
+								data-aos-duration='700'
 								href=''
 								className='group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40'
 							>
@@ -59,6 +68,9 @@ const Gallery = () => {
 								/>
 							</a>
 							<a
+								data-aos='fade-left'
+								data-aos-anchor-placement='center-bottom'
+								data-aos-duration='700'
 								href=''
 								className='group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40'
 							>
@@ -70,7 +82,11 @@ const Gallery = () => {
 							</a>
 						</div>
 					</div>
-					<div className='col-span-2 sm:col-span-1 md:col-span-1 bg-sky-50 h-auto md:h-full flex flex-col'>
+					<div
+						data-aos='fade-left'
+						data-aos-anchor-placement='center-bottom'
+						className='col-span-2 sm:col-span-1 md:col-span-1 bg-sky-50 h-auto md:h-full flex flex-col'
+					>
 						<a
 							href=''
 							className='group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow'

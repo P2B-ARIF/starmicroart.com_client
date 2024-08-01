@@ -30,7 +30,7 @@ const AboutUs = () => {
 					</button>
 				</div>
 			</div>
-			<div className='w-full h-full min-h-[300px] border rounded-lg overflow-hidden'>
+			<div className='w-full h-full min-h-[300px] rounded-lg overflow-hidden'>
 				<iframe
 					data-ux='EmbedVideo'
 					src='https://player.vimeo.com/video/978722148?h=890b192c07&autoplay=1&loop=1&autopause=0&muted=1&title=0&byline=0&portrait=0&controls=0'

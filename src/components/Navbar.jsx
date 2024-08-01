@@ -68,7 +68,7 @@ const Navbar = () => {
 					</div>
 				</div>
 				<nav
-					className={`flex items-center justify-between container mx-auto mt-3 px-5 ${
+					className={`flex items-center justify-between container mx-auto mt-3 px-5 md:px-0 ${
 						window?.location?.pathname == "/" && "text-white"
 					}`}
 				>
@@ -85,7 +85,7 @@ const Navbar = () => {
 						</div>
 					</div>
 
-					<div className='hidden md:flex w-full items-center gap-10 text-lg font-light py-5'>
+					<div className='hidden md:flex w-full items-center justify-end gap-10 text-lg font-light py-5'>
 						{navLists?.map(navList => (
 							<Link
 								key={navList?.path}

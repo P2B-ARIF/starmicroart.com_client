@@ -52,7 +52,7 @@ const Advantages = () => {
 
 				<div className='grid grid-cols-2 gap-5 gap-y-10 pt-14 px-5 md:px-20'>
 					{advantages.map((advantage, i) => (
-						<div key={i} className='space-y-4'>
+						<div data-aos='zoom-out-up' key={i} className='space-y-4'>
 							<div className='bg-secondary h-[60px] md:h-[70px] w-[60px] md:w-[70px] flex items-center justify-center rounded-full mx-auto'>
 								<advantage.icon className='text-3xl md:text-4xl mx-auto text-white' />
 							</div>

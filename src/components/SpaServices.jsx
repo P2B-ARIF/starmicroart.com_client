@@ -1,12 +1,10 @@
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 import React from "react";
 import h1 from "./../assets/images/h1.jpg";
 import h2 from "./../assets/images/h2.jpg";
 import h3 from "./../assets/images/h3.jpg";
 import h4 from "./../assets/images/h4.jpg";
 import ServiceCard from "./ServiceCard";
-AOS.init();
 
 const SpaServices = () => {
 	const services = [
