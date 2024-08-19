@@ -25,15 +25,13 @@ const Register = () => {
 		const password = e.target.password.value;
 		const confirm = e.target.confirm.value;
 
-		console.log(phone, email);
-
 		if (password !== confirm) {
 			setError("Passwords do not match");
 			return; // Exit early if passwords don't match
 		}
 
 		try {
-			const result = await createUser(email, password, name, phone);
+			const result = await createUser(email, password, name);
 			if (result) {
 				toast.success("User created successfully");
 				navigate("/");

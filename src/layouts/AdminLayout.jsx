@@ -29,7 +29,10 @@ const AdminLayout = () => {
 		}
 
 		if (user) {
-			if (user?.email !== "mohammadarif4319@gmail.com") {
+			if (
+				user?.email !== "mohammadarif4319@gmail.com" ||
+				user?.email !== "starmicroart@gmail.com"
+			) {
 				toast.error("You can't entry here..");
 				navigate("/");
 			}
@@ -53,7 +56,10 @@ const AdminLayout = () => {
 				});
 			}
 
-			if (user?.email === "mohammadarif4319@gmail.com") {
+			if (
+				user?.email !== "mohammadarif4319@gmail.com" ||
+				user?.email !== "starmicroart@gmail.com"
+			) {
 				onSnapshot(doc(db, "starmicroart", "bookings"), doc => {
 					dispatch(setAllBookings(doc.data()));
 				});
