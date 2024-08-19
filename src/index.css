@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Rubik", sans-serif;
+	/* font-family: "Lato", sans-serif; */
+	/* font-family: "Dancing Script", cursive; */
+}
+
+/* @keyframes spin {
+	0% {
+		transform: translate(0, 0);
+	}
+	50% {
+		transform: translate(100px, 100px);
+	}
+	100% {
+		transform: translate(100px, -50px);
+	}
+}
+
+.animate-spin {
+	animation: spin 2s linear infinite;
+} */
