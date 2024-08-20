@@ -38,8 +38,7 @@ const AdminLayout = () => {
 			}
 		}
 	}, [location, navigate, user]);
- 
-	
+
 	useEffect(() => {
 		dispatch(setLoading(true));
 		if (!starmicroart?.services) {
