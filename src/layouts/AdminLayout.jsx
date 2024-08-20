@@ -27,7 +27,9 @@ const AdminLayout = () => {
 			navigate("/dashboard/controller");
 			console.log("navigate to...");
 		}
+  
 
+		
 		if (user) {
 			if (
 				user?.email !== "mohammadarif4319@gmail.com" ||
