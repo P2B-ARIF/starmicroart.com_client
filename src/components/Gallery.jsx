@@ -10,7 +10,7 @@ const Gallery = ({ galleryImages }) => {
 	}, [galleryImages]);
 
 	return (
-		<section className='bg-white my-20'>
+		<section className='bg-white my-20 container mx-auto overflow-hidden'>
 			<div className='text-center mb-8 space-y-4 md:space-y-5'>
 				<h3 className='text-3xl md:text-4xl font-bold text-primary font-secondary'>
 					Portfolio

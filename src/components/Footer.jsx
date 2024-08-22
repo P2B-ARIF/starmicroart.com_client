@@ -16,7 +16,7 @@ const Footer = () => {
 	return (
 		<div className='bg-black_c text-white_c/90 pb-0 mb-0'>
 			<div className='container mx-auto p-4 py-10 text-center flex flex-col items-center space-y-5'>
-				<h2 className='text-2xl md:text-3xl font-semibold md:font-bold'>
+				<h2 className='text-xl sm:text-2xl md:text-3xl font-semibold md:font-bold'>
 					starmicroart.com
 				</h2>
 

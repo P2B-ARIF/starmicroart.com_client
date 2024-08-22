@@ -22,7 +22,7 @@ const Home = () => {
 
 			<DiscountOffer discount={controller?.discount} />
 			<Gallery galleryImages={controller?.gallery} />
-			<AboutUs />
+			<AboutUs />	
 			<OurTeam teamMembers={controller?.team} />
 		</motion.div>
 	);
